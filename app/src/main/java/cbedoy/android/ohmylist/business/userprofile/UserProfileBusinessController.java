@@ -3,6 +3,7 @@ package cbedoy.android.ohmylist.business.userprofile;
 import cbedoy.android.ohmylist.business.userprofile.interfaces.IUserProfileInformationDelegate;
 import cbedoy.android.ohmylist.business.userprofile.interfaces.IUserProfileInformationHandler;
 import cbedoy.android.ohmylist.business.userprofile.interfaces.IUserProfileRepresentationDelegate;
+import cbedoy.android.ohmylist.business.userprofile.interfaces.IUserProfileRepresentationHandler;
 import cbedoy.android.ohmylist.business.userprofile.interfaces.IUserProfileTransactionDelegate;
 import cbedoy.android.ohmylist.business.userprofile.interfaces.IUserProfileTransactionHandler;
 
@@ -13,7 +14,7 @@ public class UserProfileBusinessController implements IUserProfileInformationDel
 {
     private IUserProfileInformationHandler informationHandler;
     private IUserProfileTransactionHandler transactionHandler;
-    private IUserProfileRepresentationDelegate representationDelegate;
+    private IUserProfileRepresentationHandler representationHandler;
 
     public void setInformationHandler(IUserProfileInformationHandler informationHandler) {
         this.informationHandler = informationHandler;
@@ -23,7 +24,7 @@ public class UserProfileBusinessController implements IUserProfileInformationDel
         this.transactionHandler = transactionHandler;
     }
 
-    public void setRepresentationDelegate(IUserProfileRepresentationDelegate representationDelegate) {
-        this.representationDelegate = representationDelegate;
+    public void setRepresentationHandler(IUserProfileRepresentationHandler representationHandler) {
+        this.representationHandler = representationHandler;
     }
 }

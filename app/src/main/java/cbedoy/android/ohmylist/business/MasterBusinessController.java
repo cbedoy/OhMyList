@@ -17,13 +17,14 @@ import cbedoy.android.ohmylist.business.notes.interfaces.INoteTransactionHandler
 import cbedoy.android.ohmylist.business.profile.interfaces.IProfileTransactionDelegate;
 import cbedoy.android.ohmylist.business.profile.interfaces.IProfileTransactionHandler;
 import cbedoy.android.ohmylist.business.signup.interfaces.ISignupTransactionDelegate;
+import cbedoy.android.ohmylist.business.signup.interfaces.ISignupTransactionHandler;
 import cbedoy.android.ohmylist.business.userprofile.interfaces.IUserProfileTransactionDelegate;
 import cbedoy.android.ohmylist.business.userprofile.interfaces.IUserProfileTransactionHandler;
 
 /**
  * Created by Carlos on 26/10/2014.
  */
-public class MasterBusinessController extends BusinessController implements IBestGuyTransactionHandler, ICalificationTransactionHandler, IDegreeTransactionHandler, IGroupTransactionHandler, IListTransactionHandler, ILoginTransactionHandler, INoteTransactionHandler, IProfileTransactionHandler, IUserProfileTransactionHandler
+public class MasterBusinessController extends BusinessController implements IBestGuyTransactionHandler, ICalificationTransactionHandler, IDegreeTransactionHandler, IGroupTransactionHandler, IListTransactionHandler, ILoginTransactionHandler, INoteTransactionHandler, IProfileTransactionHandler, IUserProfileTransactionHandler, ISignupTransactionHandler
 {
     private IBestGuyTransactionDelegate bestGuyTransactionDelegate;
     private ICalificationTransactionDelegate calificationTransactionDelegate;
@@ -34,7 +35,7 @@ public class MasterBusinessController extends BusinessController implements IBes
     private IProfileTransactionDelegate profileTransactionDelegate;
     private INoteTransactionDelegate noteTransactionDelegate;
     private ISignupTransactionDelegate signupTransactionDelegate;
-    private IUserProfileTransactionDelegate transactionDelegate;
+    private IUserProfileTransactionDelegate userProfileTransactionDelegate;
 
     public void setBestGuyTransactionDelegate(IBestGuyTransactionDelegate bestGuyTransactionDelegate) {
         this.bestGuyTransactionDelegate = bestGuyTransactionDelegate;
@@ -72,8 +73,8 @@ public class MasterBusinessController extends BusinessController implements IBes
         this.signupTransactionDelegate = signupTransactionDelegate;
     }
 
-    public void setTransactionDelegate(IUserProfileTransactionDelegate transactionDelegate) {
-        this.transactionDelegate = transactionDelegate;
+    public void setUserProfileTransactionDelegate(IUserProfileTransactionDelegate userProfileTransactionDelegate) {
+        this.userProfileTransactionDelegate = userProfileTransactionDelegate;
     }
 
     public void startOhMyList(){

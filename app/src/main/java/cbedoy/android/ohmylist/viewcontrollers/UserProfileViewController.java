@@ -3,6 +3,7 @@ package cbedoy.android.ohmylist.viewcontrollers;
 import android.view.View;
 
 import cbedoy.android.ohmylist.business.profile.interfaces.IProfileRepresentationDelegate;
+import cbedoy.android.ohmylist.business.userprofile.interfaces.IUserProfileRepresentationDelegate;
 import cbedoy.android.ohmylist.business.userprofile.interfaces.IUserProfileRepresentationHandler;
 import cbedoy.android.ohmylist.business.userprofile.interfaces.IUserProfileTransactionHandler;
 
@@ -11,9 +12,9 @@ import cbedoy.android.ohmylist.business.userprofile.interfaces.IUserProfileTrans
  */
 public class UserProfileViewController extends AbstractViewController implements IUserProfileRepresentationHandler{
 
-    private IProfileRepresentationDelegate representationDelegate;
+    private IUserProfileRepresentationDelegate representationDelegate;
 
-    public void setRepresentationDelegate(IProfileRepresentationDelegate representationDelegate) {
+    public void setRepresentationDelegate(IUserProfileRepresentationDelegate representationDelegate) {
         this.representationDelegate = representationDelegate;
     }
 

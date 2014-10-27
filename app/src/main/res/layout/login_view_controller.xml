@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/oh_my_list_bg"/>
+
+    <View
+        android:background="@color/blue_low_trans"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@color/blue_high"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/login_view_controller_sign_up"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oh My List"
+        android:layout_marginTop="48dp"
+        android:textSize="48sp"
+        android:textColor="@color/orange"
+
+        android:id="@+id/login_view_controller_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:hint="username"
+        android:padding="6dp"
+        android:textSize="20sp"
+        android:textColor="@color/orange_trans"
+        android:text="carlos.bedoy"
+        android:background="@color/transparent"
+        android:id="@+id/login_view_controller_username"
+        android:layout_below="@+id/login_view_controller_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:padding="6dp"
+        android:hint="username"
+        android:textSize="20sp"
+        android:textColor="@color/orange_trans"
+        android:text="carlos.bedoy"
+        android:background="@color/transparent"
+        android:id="@+id/login_view_controller_password"
+        android:layout_below="@+id/login_view_controller_username"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@color/orange"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:id="@+id/login_view_controller_login"
+        android:layout_above="@+id/login_view_controller_sign_up"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="app_principal_bottom">#303238</color>
-    <color name="app_principal">#3d4147</color>
-    <color name="app_principal_trans">#994d5059</color>
-    <color name="app_pink">#CF4858</color>
-    <color name="app_blue">#16A79D</color>
-    <color name="app_blue_trans">#9916A79D</color>
-    <color name="app_purple">#80628B</color>
-    <color name="app_yellow">#F4AC42</color>
-    <color name="app_text">#FAFAFA</color>
+    <color name="orange">#d65a38</color>
+    <color name="gray">#667078</color>
+    <color name="blue_high">#6a91ab</color>
+    <color name="blue_low">#c3d6de</color>
+    <color name="white">#f5f5f5</color>
+
+
+    <color name="orange_trans">#99d65a38</color>
+    <color name="gray_trans">#99667078</color>
+    <color name="blue_high_trans">#996a91ab</color>
+    <color name="blue_low_trans">#ddc3d6de</color>
+    <color name="white_trans">#99f5f5f5</color>
+
+    <color name="transparent">#33f0f0f0</color>
+    <color name="transparent_full">#00000000</color>
 
 </resources>

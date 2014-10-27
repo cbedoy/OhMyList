@@ -21,7 +21,7 @@ public abstract class AbstractViewController implements NavigationBar.INavigatio
     protected Bitmap backgroundBitmap;
     protected IMessageRepresentationHandler messageRepresentation;
     protected NavigationBar navigationBar;
-    protected boolean buttons_status;
+    protected boolean buttonStatus;
 
     public enum CONTROLLER
     {
@@ -57,19 +57,13 @@ public abstract class AbstractViewController implements NavigationBar.INavigatio
         this.backgroundBitmap = backgroundBitmap;
     }
 
-    public void setButtons_status(boolean buttons_status) {
-        this.buttons_status = buttons_status;
+    protected void setButtonStatus(boolean buttonStatus) {
+        this.buttonStatus = buttonStatus;
     }
 
     public void setMessageRepresentation(IMessageRepresentationHandler messageRepresentation) {
         this.messageRepresentation = messageRepresentation;
     }
-
-    public void setView(View view) {
-        this.view = view;
-    }
-
-
 
     public View getView() {
         if(view == null)
@@ -86,7 +80,7 @@ public abstract class AbstractViewController implements NavigationBar.INavigatio
     }
 
     public void toogleButtons(boolean status) {
-        this.buttons_status = status;
+        this.buttonStatus = status;
     }
 
     public boolean onBackPressed() {

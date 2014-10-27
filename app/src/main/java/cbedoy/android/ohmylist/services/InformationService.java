@@ -4,12 +4,14 @@ package cbedoy.android.ohmylist.services;
 import cbedoy.android.ohmylist.business.bestguys.interfaces.IBestGuyInformationDelegate;
 import cbedoy.android.ohmylist.business.bestguys.interfaces.IBestGuyInformationHandler;
 import cbedoy.android.ohmylist.business.califications.interfaces.ICalificationInformationDelegate;
+import cbedoy.android.ohmylist.business.califications.interfaces.ICalificationInformationHandler;
 import cbedoy.android.ohmylist.business.degree.interfaces.IDegreeInformationDelegate;
 import cbedoy.android.ohmylist.business.degree.interfaces.IDegreeInformationHandler;
 import cbedoy.android.ohmylist.business.group.interfaces.IGroupInformationDelegate;
 import cbedoy.android.ohmylist.business.group.interfaces.IGroupInformationHandler;
 import cbedoy.android.ohmylist.business.list.interfaces.IListInformationDelegate;
 import cbedoy.android.ohmylist.business.list.interfaces.IListInformationHandler;
+import cbedoy.android.ohmylist.business.login.interfaces.ILoginInformationDelegate;
 import cbedoy.android.ohmylist.business.login.interfaces.ILoginInformationHandler;
 import cbedoy.android.ohmylist.business.notes.interfaces.INoteInformationDelegate;
 import cbedoy.android.ohmylist.business.notes.interfaces.INoteInformationHandler;
@@ -22,7 +24,7 @@ import cbedoy.android.ohmylist.business.userprofile.interfaces.IUserProfileInfor
 import cbedoy.android.ohmylist.interfaces.IMementoHandler;
 import cbedoy.android.ohmylist.interfaces.IRestService;
 
-public class InformationService implements ILoginInformationHandler, IBestGuyInformationHandler, IDegreeInformationHandler, IGroupInformationHandler, IListInformationHandler, INoteInformationHandler, IProfileInformationHandler, ISignupInformationHandler, IUserProfileInformationHandler
+public class InformationService implements ILoginInformationHandler, ICalificationInformationHandler, IBestGuyInformationHandler, IDegreeInformationHandler, IGroupInformationHandler, IListInformationHandler, INoteInformationHandler, IProfileInformationHandler, ISignupInformationHandler, IUserProfileInformationHandler
 {
     private IRestService restService;
     private IMementoHandler mementoHandler;
@@ -35,6 +37,11 @@ public class InformationService implements ILoginInformationHandler, IBestGuyInf
     private IProfileInformationDelegate profileInformationDelegate;
     private ISignupInformationDelegate signupInformationDelegate;
     private IUserProfileInformationDelegate userProfileInformationDelegate;
+    private ILoginInformationDelegate loginInformationDelegate;
+
+    public void setLoginInformationDelegate(ILoginInformationDelegate loginInformationDelegate) {
+        this.loginInformationDelegate = loginInformationDelegate;
+    }
 
     public void setBestGuyInformationDelegate(IBestGuyInformationDelegate bestGuyInformationDelegate) {
         this.bestGuyInformationDelegate = bestGuyInformationDelegate;
